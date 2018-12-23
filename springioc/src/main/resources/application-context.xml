@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.fys.springioc.bean.User">
+        <property name="userName" value="tom"/>
+        <property name="address" ref="address"/>
+    </bean>
+    <bean id="address" class="com.fys.springioc.bean.Address">
+        <property name="city" value="suzhou"></property>
+    </bean>
+
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+
+    <bean id="address" class="com.fys.ioc.bean.Address">
+        <property name="city" value="suzhou"></property>
+    </bean>
+
+    <bean id="user" class="com.fys.ioc.bean.User">
+        <property name="userName" value="tom"></property>
+        <property name="address" ref="address"></property>
+    </bean>
+
+</beans>
